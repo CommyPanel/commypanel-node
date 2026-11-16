@@ -1,0 +1,47 @@
+{
+  "name": "commypanel",
+  "version": "0.1.0",
+  "description": "A small, dependency-free client for the CommyPanel HTTP API: deploy, control, logs and environment variables.",
+  "keywords": [
+    "commypanel",
+    "deploy",
+    "api-client",
+    "devops"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CommyPanel/commypanel-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CommyPanel/commypanel-node/issues"
+  },
+  "homepage": "https://github.com/CommyPanel/commypanel-node#readme",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.6.0"
+  }
+}
