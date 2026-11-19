@@ -14,8 +14,6 @@ and follow deployments, start, stop and restart an app, read its logs and manage
 npm install commypanel
 ```
 
-(The package is not published yet; until then install from this repository.)
-
 ## Use
 
 Create a token in the panel under **Settings > API tokens**. Give it only what it needs (for a deploy job:
