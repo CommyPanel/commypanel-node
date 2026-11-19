@@ -38,7 +38,8 @@
   "homepage": "https://github.com/CommyPanel/commypanel-node#readme",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "npm run build && node --test test/*.test.mjs"
+    "test": "npm run build && node --test test/*.test.mjs",
+    "prepublishOnly": "npm test"
   },
   "devDependencies": {
     "@types/node": "^20.19.43",
